@@ -1,0 +1,12 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ job_offer.titre_poste }}</h1>
+    <p><strong>Description:</strong> {{ job_offer.description }}</p>
+    <p><strong>Competence:</strong> {{ job_offer.competence }}</p>
+    <p><strong>Salary:</strong> {{ job_offer.salaire_propose }}</p>
+    <p><strong>Publication Date:</strong> {{ job_offer.date_publication_present }}</p>
+    <p><strong>Application Deadline:</strong> {{ job_offer.date_limite_candidature }}</p>
+</div>
+{% endblock %}
